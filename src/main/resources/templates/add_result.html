@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Registration Successful</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f1f1f1; 
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin-top: 50px;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h3 {
+            text-align: center;
+            color: #28a745; 
+            margin-bottom: 30px;
+        }
+        .btn-home {
+            width: 100%;
+            border-radius: 10px;
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            font-size: 16px;
+            text-decoration: none;
+            text-align: center;
+            display: inline-block;
+        }
+        .btn-home:hover {
+            background-color: #0056b3;
+        }
+        .student-id {
+            font-weight: bold;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h3>Thank You! Your Registration Was Successful</h3>
+    <p class="text-center">Your registration ID is: <span class="student-id" th:text="${studentId}"></span></p>
+    <a href="index.html" class="btn-home">Go to Home</a>
+</div>
+
+</body>
+</html>

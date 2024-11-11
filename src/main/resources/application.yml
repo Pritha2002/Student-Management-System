@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: 07.SpringMVCEx7
+  datasource: 
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:///springbootproj
+    username: root
+    password: Tupa@2025
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  mvc:
+    servlet:
+      path: /
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html

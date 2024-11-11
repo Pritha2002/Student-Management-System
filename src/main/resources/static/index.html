@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color:#F7FFF9;
+            background-size: cover;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        .logo {
+            max-width: 80px;
+            margin-bottom: 15px;
+        }
+        .btn-custom {
+            margin: 10px;
+            width: 200px;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUf6bZTFHuQeB7LWcCbxY-QJ7JScWCDsP3Ow&s" alt="Logo" class="logo">
+        <h1 class="mb-4">Student Management System</h1>
+        <p class="mb-4">Manage student data with ease!</p>
+
+        <div class="d-flex flex-column align-items-center">
+            <button class="btn btn-primary btn-custom">
+                <a href="add_student.html">Add Student</a>
+            </button>
+            <button class="btn btn-success btn-custom">
+                <a href="check_student.html">Check Student</a>
+            </button>
+            <button class="btn btn-warning btn-custom">
+                <a href="update_student.html">Update Student</a>
+            </button>
+            <button class="btn btn-danger btn-custom">
+                <a href="delete_student.html">Remove Student</a>
+            </button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

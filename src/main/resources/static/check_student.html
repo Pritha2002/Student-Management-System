@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+        .search-container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+        }
+        h2 {
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            font-weight: bold;
+        }
+        .btn-primary {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="search-container">
+        <h2>Retrieve Student Data Easily</h2>
+        <form method="GET" action="search">
+            <div class="form-group">
+                <label for="studentId">Enter Student ID</label>
+                <input type="text" class="form-control" name="studentId" id="studentId" placeholder="enter stduent id" required>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Search</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

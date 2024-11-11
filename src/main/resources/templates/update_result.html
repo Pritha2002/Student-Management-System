@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Record</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb); 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        .container {
+            max-width: 500px;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .message {
+            color: #00796b; 
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .btn-home {
+            background-color: #00796b; 
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .btn-home:hover {
+            background-color: #004d40; 
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <p class="message" th:text="'Dear ' + ${firstName} + ', your phone number has been updated successfully.'">
+    </p>
+    
+    <a href="index.html" class="btn-home">Back to Home</a>
+</div>
+
+</body>
+</html>
